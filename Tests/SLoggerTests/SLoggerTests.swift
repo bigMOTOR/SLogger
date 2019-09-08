@@ -2,14 +2,11 @@ import XCTest
 @testable import SLogger
 
 final class SLoggerTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(SLogger().text, "Hello, World!")
-    }
-
-    static var allTests = [
-        ("testExample", testExample),
-    ]
+  func testExample() {
+    SLogger.debug("Hello World!")
+    SLogger.info("Hello World!")
+    SLogger.warning("Hello World!")
+    SLogger.error("Hello World!")
+//    SLogger.fatal("Hello World!")
+  }
 }
